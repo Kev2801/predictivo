@@ -3,103 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predicitvo Eléctrico</title>
+    <title>Mi Página Interactiva</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
             background-color: #f4f4f4;
         }
-
         h1 {
             text-align: center;
             margin: 20px 0;
-            font-size: 2.5em;
             color: #333;
         }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 20px;
+        .container {
             width: 80%;
             margin: 0 auto;
         }
-
-        .grid-item {
-            text-align: center;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .grid-item h2 {
-            font-size: 1.5em;
-            color: #555;
-            margin-bottom: 15px;
-        }
-
-        .grid-item img {
-            max-width: 100%;
+        .main-image {
+            width: 100%;
             height: auto;
-            border-radius: 8px;
+            display: block;
+            margin-bottom: 20px;
         }
-
-        a {
-            text-decoration: none;
-            color: inherit;
+        .section-title {
+            cursor: pointer;
+            font-size: 18px;
+            margin: 10px 0;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 5px solid #333;
+        }
+        .content {
+            display: none;
+            padding-left: 20px;
+        }
+        .content img {
+            width: 200px;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .content p {
+            font-size: 14px;
+            color: #555;
         }
     </style>
 </head>
 <body>
 
-    <!-- Título principal centrado -->
-    <h1>Mantenimiento Predictivo Eléctrico</h1>
+    <h1>Mi Página Interactiva</h1>
 
-    <!-- Grid con 4 títulos y 4 imágenes en cada fila -->
-    <div class="grid">
-        <!-- Primera fila -->
-        <div class="grid-item">
-            <a href="pagina1.html"><h2>Título 1</h2></a>
-            <img src="https://91le.com.ar/wp-content/uploads/2021/03/Ventajas-termografia.jpeg" alt="Imagen 1">
-        </div>
-        <div class="grid-item">
-            <a href="pagina2.html"><h2>Título 2</h2></a>
-            <img src="https://i0.wp.com/gsl-ndt.pe/wp-content/uploads/2024/03/UE-SYSTEMS-%E2%80%93-ULTRAPROBE-15000.jpg?fit=600%2C600&ssl=1" alt="Imagen 2">
-        </div>
-        <div class="grid-item">
-            <a href="pagina3.html"><h2>Título 3</h2></a>
-            <img src="https://www.omicronenergy.com/cpc100-electrical-science/Resources/Public/Images/content/Stronger-together-tiny.jpg" alt="Imagen 3">
-        </div>
-        <div class="grid-item">
-            <a href="pagina4.html"><h2>Título 4</h2></a>
-            <img src="https://comulsa.pe/wp-content/uploads/2021/01/Baker-AWA-IV.jpg" alt="Imagen 4">
+    <div class="container">
+        <img src="https://via.placeholder.com/1200x400" alt="Imagen Principal" class="main-image">
+        
+        <!-- Sección 1 -->
+        <div class="section-title" onclick="toggleContent('content1')">Título 1</div>
+        <div class="content" id="content1">
+            <img src="https://via.placeholder.com/200" alt="Imagen 1">
+            <p>Descripción de la imagen 1.</p>
         </div>
 
-        <!-- Segunda fila (sin links a nuevas páginas) -->
-        <div class="grid-item">
-            <h2>Título 5</h2>
-            <img src="https://via.placeholder.com/200x150" alt="Imagen 5">
+        <!-- Sección 2 -->
+        <div class="section-title" onclick="toggleContent('content2')">Título 2</div>
+        <div class="content" id="content2">
+            <img src="https://via.placeholder.com/200" alt="Imagen 2">
+            <p>Descripción de la imagen 2.</p>
         </div>
-        <div class="grid-item">
-            <h2>Título 6</h2>
-            <img src="https://via.placeholder.com/200x150" alt="Imagen 6">
+
+        <!-- Sección 3 -->
+        <div class="section-title" onclick="toggleContent('content3')">Título 3</div>
+        <div class="content" id="content3">
+            <img src="https://via.placeholder.com/200" alt="Imagen 3">
+            <p>Descripción de la imagen 3.</p>
         </div>
-        <div class="grid-item">
-            <h2>Título 7</h2>
-            <img src="https://via.placeholder.com/200x150" alt="Imagen 7">
+
+        <!-- Sección 4 -->
+        <div class="section-title" onclick="toggleContent('content4')">Título 4</div>
+        <div class="content" id="content4">
+            <img src="https://via.placeholder.com/200" alt="Imagen 4">
+            <p>Descripción de la imagen 4.</p>
         </div>
-        <div class="grid-item">
-            <h2>Título 8</h2>
-            <img src="https://via.placeholder.com/200x150" alt="Imagen 8">
+
+        <!-- Sección 5 -->
+        <div class="section-title" onclick="toggleContent('content5')">Título 5</div>
+        <div class="content" id="content5">
+            <img src="https://via.placeholder.com/200" alt="Imagen 5">
+            <p>Descripción de la imagen 5.</p>
         </div>
+
+        <!-- Sección 6 -->
+        <div class="section-title" onclick="toggleContent('content6')">Título 6</div>
+        <div class="content" id="content6">
+            <img src="https://via.placeholder.com/200" alt="Imagen 6">
+            <p>Descripción de la imagen 6.</p>
+        </div>
+
+        <!-- Sección 7 -->
+        <div class="section-title" onclick="toggleContent('content7')">Título 7</div>
+        <div class="content" id="content7">
+            <img src="https://via.placeholder.com/200" alt="Imagen 7">
+            <p>Descripción de la imagen 7.</p>
+        </div>
+
+        <!-- Sección 8 -->
+        <div class="section-title" onclick="toggleContent('content8')">Título 8</div>
+        <div class="content" id="content8">
+            <img src="https://via.placeholder.com/200" alt="Imagen 8">
+            <p>Descripción de la imagen 8.</p>
+        </div>
+
     </div>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 </html>
