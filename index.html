@@ -34,25 +34,33 @@
             padding: 10px;
             border-left: 5px solid #333;
         }
-        .content {
+        .content, .sub-content {
             display: none;
             padding-left: 20px;
             transition: max-height 0.5s ease-out;
             overflow: hidden;
-            max-height: 0;
         }
-        .content.show {
-            max-height: 500px; /* Ajusta según el contenido */
+        .content.show, .sub-content.show {
+            max-height: 1000px; /* Ajusta según el contenido */
         }
-        .content img {
-            width: 200px;
-            height: auto;
-            display: block;
-            margin-bottom: 10px;
+        .sub-title {
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 0;
+            background-color: #eaeaea;
+            padding: 8px;
+            border-left: 5px solid #666;
         }
-        .content p {
+        .description {
             font-size: 14px;
             color: #555;
+            margin-bottom: 10px;
+        }
+        .images img {
+            width: 200px;
+            height: auto;
+            margin-right: 10px;
+            display: inline-block;
         }
     </style>
 </head>
@@ -66,8 +74,172 @@
         <!-- Sección 1 -->
         <div class="section-title" onclick="toggleContent('content1')">EQUIPOS PARA IR, UE y MT</div>
         <div class="content" id="content1">
-            <img src="https://via.placeholder.com/200" alt="Imagen 1">
-            <p>Descripción de la imagen 1.</p>
+
+            <!-- Subtítulo 1 -->
+            <div class="sub-title" onclick="toggleContent('subContent1')">Subtítulo 1</div>
+            <div class="sub-content" id="subContent1">
+                <p class="description">Descripción del Subtítulo 1. Aquí puedes agregar detalles técnicos o información relevante.</p>
+                <div class="images">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 1">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 2">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 3">
+                </div>
+            </div>
+
+            <!-- Subtítulo 2 -->
+            <div class="sub-title" onclick="toggleContent('subContent2')">Subtítulo 2</div>
+            <div class="sub-content" id="subContent2">
+                <p class="description">Descripción del Subtítulo 2. Aquí puedes agregar detalles técnicos o información relevante.</p>
+                <div class="images">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 1">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 2">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 3">
+                </div>
+            </div>
+
+            <!-- Subtítulo 3 -->
+            <div class="sub-title" onclick="toggleContent('subContent3')">Subtítulo 3</div>
+            <div class="sub-content" id="subContent3">
+                <p class="description">Descripción del Subtítulo 3. Aquí puedes agregar detalles técnicos o información relevante.</p>
+                <div class="images">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 1">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 2">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 3">
+                </div>
+            </div>
+
+            <!-- Subtítulo 4 -->
+            <div class="sub-title" onclick="toggleContent('subContent4')">Subtítulo 4</div>
+            <div class="sub-content" id="subContent4">
+                <p class="description">Descripción del Subtítulo 4.</p>
+                <div class="images">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 1">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 2">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 3">
+                </div>
+            </div>
+
+            <!-- Subtítulo 5 -->
+            <div class="sub-title" onclick="toggleContent('subContent5')">Subtítulo 5</div>
+            <div class="sub-content" id="subContent5">
+                <p class="description">Descripción del Subtítulo 5.</p>
+                <div class="images">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 1">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 2">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 3">
+                </div>
+            </div>
+
+            <!-- Subtítulo 6 -->
+            <div class="sub-title" onclick="toggleContent('subContent6')">Subtítulo 6</div>
+            <div class="sub-content" id="subContent6">
+                <p class="description">Descripción del Subtítulo 6.</p>
+                <div class="images">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 1">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 2">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 3">
+                </div>
+            </div>
+
+            <!-- Subtítulo 7 -->
+            <div class="sub-title" onclick="toggleContent('subContent7')">Subtítulo 7</div>
+            <div class="sub-content" id="subContent7">
+                <p class="description">Descripción del Subtítulo 7.</p>
+                <div class="images">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 1">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 2">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 3">
+                </div>
+            </div>
+
+            <!-- Subtítulo 8 -->
+            <div class="sub-title" onclick="toggleContent('subContent8')">Subtítulo 8</div>
+            <div class="sub-content" id="subContent8">
+                <p class="description">Descripción del Subtítulo 8.</p>
+                <div class="images">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 1">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 2">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 3">
+                </div>
+            </div>
+
+            <!-- Subtítulo 9 -->
+            <div class="sub-title" onclick="toggleContent('subContent9')">Subtítulo 9</div>
+            <div class="sub-content" id="subContent9">
+                <p class="description">Descripción del Subtítulo 9.</p>
+                <div class="images">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 1">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 2">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 3">
+                </div>
+            </div>
+
+            <!-- Subtítulo 10 -->
+            <div class="sub-title" onclick="toggleContent('subContent10')">Subtítulo 10</div>
+            <div class="sub-content" id="subContent10">
+                <p class="description">Descripción del Subtítulo 10.</p>
+                <div class="images">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 1">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 2">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 3">
+                </div>
+            </div>
+
+            <!-- Subtítulo 11 -->
+            <div class="sub-title" onclick="toggleContent('subContent11')">Subtítulo 11</div>
+            <div class="sub-content" id="subContent11">
+                <p class="description">Descripción del Subtítulo 11.</p>
+                <div class="images">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 1">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 2">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 3">
+                </div>
+            </div>
+
+            <!-- Subtítulo 12 -->
+            <div class="sub-title" onclick="toggleContent('subContent12')">Subtítulo 12</div>
+            <div class="sub-content" id="subContent12">
+                <p class="description">Descripción del Subtítulo 12.</p>
+                <div class="images">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 1">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 2">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 3">
+                </div>
+            </div>
+
+            <!-- Subtítulo 13 -->
+            <div class="sub-title" onclick="toggleContent('subContent13')">Subtítulo 13</div>
+            <div class="sub-content" id="subContent13">
+                <p class="description">Descripción del Subtítulo 13.</p>
+                <div class="images">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 1">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 2">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 3">
+                </div>
+            </div>
+
+            <!-- Subtítulo 14 -->
+            <div class="sub-title" onclick="toggleContent('subContent14')">Subtítulo 14</div>
+            <div class="sub-content" id="subContent14">
+                <p class="description">Descripción del Subtítulo 14.</p>
+                <div class="images">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 1">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 2">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 3">
+                </div>
+            </div>
+
+            <!-- Subtítulo 15 -->
+            <div class="sub-title" onclick="toggleContent('subContent15')">Subtítulo 15</div>
+            <div class="sub-content" id="subContent15">
+                <p class="description">Descripción del Subtítulo 15.</p>
+                <div class="images">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 1">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 2">
+                    <img src="https://via.placeholder.com/200" alt="Imagen 3">
+                </div>
+            </div>
+
         </div>
 
         <!-- Sección 2 -->
